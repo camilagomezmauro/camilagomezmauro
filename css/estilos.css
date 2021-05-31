@@ -1,0 +1,269 @@
+/*ASPECTOS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.divider{
+    width: 104px;
+    height: 5px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    background-color: #f14c50;
+}
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+/*FIN ASPECTOS GENERALES*/
+
+/*ENCABEZADO*/
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*alinea verticalmente*/
+}
+
+header ul{
+   display: flex;
+}
+
+nav ul li a{
+    color: black;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav a:hover{
+    color: #f14c50;
+}
+
+.header_index{
+    background: url(imagenes/pantone.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/*titular*/
+.titular{
+    color: #fff;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+h1{ 
+    font-weight: 500;
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+.titular a {
+    background: #f14c50;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 7px 7px;
+    font-size: bold;
+}
+/*FIN ENCABEZADO*/
+
+/*Home - quienes somos*/
+.quienessomos {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.quinessomos_flex{
+    display: flex;
+}
+.leyenda{
+    font-size: 20px;
+    color: #f14c50;
+}
+
+.parrafo_somos p {
+    padding: 0 0 0px 50px;
+    margin-bottom: 20px;
+}
+
+.quinessomos_flex a{
+    margin: 0px 0 0px 50px;
+    background: #f14c50;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 7px 7px;
+    font-size: bold;
+}
+
+/*Home - FIN quienes somos*/
+
+/*Home - trabajos populares*/
+
+#tarjertas {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.tarjeta {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+   
+}
+.contenedor-tarjetas img {
+    border-radius: 5px 5px;
+    margin: 0;
+    
+}
+
+.contenedor-tarjetas h3 {
+    margin: 10px;
+}
+
+
+.tarjeta img{
+    width: 313px;
+    height: 203px;
+    transition: 0.5s;
+    }
+.tarjeta img:hover {
+    box-shadow: -1px 0px 8px black;
+    width: 316px;
+    height: 206px;
+}
+/*Fin Home - alguno de nuestros trabajos*/
+
+/*Formulario*/
+
+#contacto .contenedor {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+input {
+    height: 48px;
+    margin-bottom: 32px;
+    padding: 5px 0px 0px 10px;
+    border-style: none none solid;
+    border-width: 2px;
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.contacto_50{
+    display: block;
+}
+
+.contacto_50 input {
+    width: 48%;
+}
+
+.contacto_100 input {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+     width: 100%;
+     border-style: none none solid;
+     border-width: 2px;
+     font-family: poppins;
+     font-size: 15px;
+     margin-bottom: 40px;
+}
+
+button {
+    display: inline;
+    padding: 12px 20px 12px 20px;
+    width: 100%;
+    text-transform: lowercase;
+    background-color: #f14c50;
+    font-family: poppins;
+    font-weight: bold;
+    color: white;
+    border-style: none;
+    border-radius: 7px 7px;
+
+}
+/*FIN FORMULARIO*/
+
+/*FOOTER*/
+footer {
+    background-image: linear-gradient(to top, #f14c50,  #362a6a);
+   
+    padding:40px;
+}
+
+footer h2{
+    font-size: 30px;
+    color: #f14c50;
+    text-align: center;
+ 
+}
+
+footer span{
+    color: #fca3c7;
+}
+
+.redes {
+    text-align: center;
+    font-size: 25px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #f14c50;
+    padding: 5px;
+}
+
+.redes a:hover {
+    color: #fca3c7;
+}
+
+/*FIN FOOTER*/
+
+/*PORTFOLIO*/
+
+.grid_container{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-gap: 5px; /*espaciado entre contenido*/
+    grid-template-columns: repeat(4, 1fr);
+}
+.portfolio{
+    padding: 20px;
+    
+}
+
+
+.contenedor .equipos {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.equipo {
+    margin: 10px;
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+    border-radius: 3%;
+}
